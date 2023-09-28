@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CDN link to access bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Worst Airports | CA Airport Review</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--Creates Navbar and gives it sytling using Bootstrap. Allows it collapse when screen is smaller-->
+        <a class="navbar-brand" href="index.html">CA Airport Review</a> <!--Style for navigation bar. Makes text more distinct. Links to index.html page-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <!--Creates a hamburger icon when collapsed. Tells it what to collapse-->
+            <span class="navbar-toggler-icon"></span> <!--Creates the hamburger icon-->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav"> <!--Controls collapsing behavior. id establishes between the button and the div-->
+            
+            <!--Links to index.html (best airports) and worst.html(worst airports)-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Best Airports</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="worst.html">Worst Airports</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container mt-4"> <!--Creates a container with a top margin of 4-->
+        <!-- Table of Worst Airports -->
+        <div class="row">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+        <h2 class="mb-4">Worst Airports in California</h2> <!--Level 2 Header with a bottom margin of 4-->
+        <table class="table table-striped"> <!--Create a box for the table-->
+            <thead class="thead-dark"> <!--Darkens the tablehead-->
+                
+                <!--Table Headings-->
+                <tr>
+                    <th>#</th>
+                    <th>Airport Name</th>
+                    <th>City</th>
+                    <th>Reason</th>
+                </tr>
+            </thead>
+            <!--Table Body with Sample Data-->
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>LAX (Los Angeles International Airport)</td>
+                    <td>Los Angeles</td>
+                    <td>Overcrowding</td>
+                </tr>
+                <!-- Create more rows as needed-->
+            </tbody>
+        </table>
+
+        <!-- Form to Submit a Review -->
+        <h2 class="mt-4 mb-4">Submit a Review</h2> <!--Margin top and bottom of 4-->
+        <form> <!--Starts form block-->
+            <div class="form-group"> <!--Allows spacking around label and input field-->
+                <label for="airportName">Airport Name</label> <!--Matches input to the attribue value in 'for'-->
+                <input type="text" class="form-control" id="airportName" required>
+            </div>
+            <div class="form-group"> <!--Form allowing proper spacing-->
+                <label for="review">Review</label> <!--Lable for Review-->
+                <textarea class="form-control" id="review" rows="3" required></textarea> <!--Allow for comments for Review no more than 3 lines-->
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button> <!--Button to allow submit-->
+        </form>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery CDN links to getBootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
